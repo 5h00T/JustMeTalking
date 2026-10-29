@@ -1,0 +1,56 @@
+html[data-jmt-filtering] yt-live-chat-item-list-renderer #items > :not([data-jmt-self="true"]),
+html[data-jmt-filtering] yt-live-chat-banner-manager,
+html[data-jmt-filtering] yt-live-chat-ticker-renderer {
+    display: none !important;
+}
+
+#jmt-controls {
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--yt-live-chat-action-panel-background-color, #8886);
+    background: var(--yt-live-chat-background-color, #fff);
+    color: var(--yt-live-chat-primary-text-color, #0f0f0f);
+    font: 12px/1.5 system-ui, sans-serif;
+}
+
+#jmt-controls > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+#jmt-controls button {
+    padding: 5px 10px;
+    border: 1px solid #8888;
+    border-radius: 3px;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+}
+#jmt-controls button:hover:not(:disabled):not([aria-pressed="true"]) {
+    background: var(--yt-live-chat-action-panel-background-color, #8882);
+}
+#jmt-controls button[aria-pressed="true"] {
+    background: var(--yt-live-chat-primary-text-color, #0f0f0f);
+    border-color: transparent;
+    color: var(--yt-live-chat-background-color, #fff);
+}
+#jmt-controls button:disabled {
+    opacity: .45;
+    cursor: default;
+}
+#jmt-controls p {
+    margin: 6px 0 0;
+    overflow-wrap: anywhere;
+}
+#jmt-controls button:focus-visible {
+    outline: 2px solid var(--yt-live-chat-primary-text-color, #0f0f0f);
+    outline-offset: 2px;
+}
+html[data-jmt-choosing] yt-live-chat-item-list-renderer #items > * {
+    cursor: crosshair;
+}
+html[data-jmt-choosing] yt-live-chat-item-list-renderer #items > :hover {
+    background: var(--yt-live-chat-action-panel-background-color, #8883) !important;
+}

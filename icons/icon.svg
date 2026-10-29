@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+    <title>Just Me Talking</title>
+    <path fill="#155fdf" d="M32 8H96C109.255 8 120 18.745 120 32V78C120 91.255 109.255 102 96 102H56L28 120V102C16.954 102 8 93.046 8 82V32C8 18.745 18.745 8 32 8Z"/>
+    <circle fill="#fff" cx="64" cy="40" r="13"/>
+    <path fill="#fff" d="M39 82C39 68.193 50.193 60 64 60S89 68.193 89 82C89 84.761 86.761 87 84 87H44C41.239 87 39 84.761 39 82Z"/>
+</svg>

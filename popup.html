@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Just Me Talking</title>
+    <link rel="stylesheet" href="popup.css">
+    <script src="shared.js" defer></script>
+    <script src="popup.js" defer></script>
+</head>
+<body>
+    <header><h1>Just Me Talking</h1></header>
+    <label class="switch"><span>自分のコメントだけ表示</span><input id="enabled" type="checkbox" disabled></label>
+    <p id="identity">読み込み中…</p>
+    <p class="help">チャット上部の「自分を指定」を押して、自分のコメントを選んでください。</p>
+    <details>
+        <summary>チャンネルIDで指定する</summary>
+        <form id="channel-form">
+            <label for="channel">自分のチャンネルID または /channel/ URL</label>
+            <input id="channel" type="text" placeholder="UC…" required autocomplete="off" spellcheck="false" aria-describedby="channel-help">
+            <p id="channel-help" class="help">@ハンドルや表示名では指定できません。チャンネルIDはYouTubeの「設定 → 詳細設定」で確認できます。</p>
+            <button type="submit">保存してON</button>
+        </form>
+    </details>
+    <button id="reset" type="button" class="reset" disabled>登録を解除</button>
+    <p id="status" role="status"></p>
+</body>
+</html>
